@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4555573874865278101
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3692.2498
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -220.97868
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 22.668772
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64680110925781153, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5738717534914690630, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_Name
+      value: Sequenciamento_rapido Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980580374072183070, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6280879032629859572, guid: 28e1e7962fc5b314b8a52dd372f4eeb1, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 389d0b48b2bdf5b42b476468ff6351e8, type: 3}

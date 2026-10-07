@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &37719333689565531
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239454321482197681, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6805680270170278998, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_Name
+      value: Especial_JG_diagnostico_rapido Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157892257734048526, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6575496568640095943, guid: 97afde687086dd84fbdca1524b9b1292, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bfed762c2ee216a4cae728935eca42bb, type: 3}
