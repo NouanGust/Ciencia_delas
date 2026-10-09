@@ -31,27 +31,27 @@ public class MaoJogador1 : MonoBehaviour
     }
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Debug.Log($"[Mao Joagador 1 {cartas}");
 
-
-        foreach (GameObject s in slots)
+        for (int i = 0; i < slots.Count; i++)
         {
-            var c = s.GetComponentInChildren<Carta>();
-            cartas.Add(c);
+            GameObject s = slots[i];
+            Carta carta_a = cartas[i];
+            //var c = s.GetComponentInChildren<Carta>();
+
+            Debug.Log($"[Mao Jogador 1] ${carta_a.nome}");
+            Debug.Log($"[Mao Jogador 1] ${carta_a.custo}");
+            Debug.Log($"[Mao Jogador 1] ${carta_a.dano}");
+
+            Instantiate(carta_a, s.gameObject.transform);
+
         }
 
         AtualizarUI();
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
 
     public void AtualizarUI()

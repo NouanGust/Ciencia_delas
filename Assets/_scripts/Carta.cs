@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using DG.Tweening;
+using UnityEngine.UI;
+
 
 public class Carta : MonoBehaviour, IPointerClickHandler
 {
@@ -8,9 +10,10 @@ public class Carta : MonoBehaviour, IPointerClickHandler
     public int custo;
     public int dano;
     public string nome;
+    public Sprite img;
     public bool especial;
 
-
+    Image imageSource;
 
 
     bool taSelecionada = false;
@@ -23,6 +26,8 @@ public class Carta : MonoBehaviour, IPointerClickHandler
 
     private void Start()
     {
+        imageSource = GetComponent<Image>();
+        imageSource.sprite = img;
         posOriginal = transform.localPosition;
         posSelecionada = posOriginal + new Vector3(0f, 50f, 0f);
     }
@@ -37,13 +42,13 @@ public class Carta : MonoBehaviour, IPointerClickHandler
             if (custo <= cDisp)
             {
                 taSelecionada = true;
-                ScriptSound.Instance.PlaySelect();
+                //ScriptSound.Instance.PlaySelect();
                 MaoJogador1.Instance.CalcularJogada(custo, this);
                 AtualizarVisual(true);
             } else
             {
                 Debug.Log("Conhecimento insuficiente");
-                ScriptSound.Instance.PlaySwap();
+                //ScriptSound.Instance.PlaySwap();
                 EfeitosDiretor.Instance.TremerCarta(this);
                 AtualizarVisual(false);
 
