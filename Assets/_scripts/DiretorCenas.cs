@@ -1,4 +1,6 @@
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
@@ -40,15 +42,17 @@ public class DiretorCenas : MonoBehaviour
 
     IEnumerator TocarSomESair()
     {
-        ScriptSound.Instance.PlayMenuCancel();
+        ScriptSound.Instance?.PlayMenuCancel();
 
         // Se a música for privada, eu não consigo acessar a duração dela diretamente, preciso de uma função para isso.
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSecondsRealtime(1f);
 
         // Se a música for publica, eu consigo acessar a duração dela diretamente.
         //yield return new WaitForSeconds(ScriptSound.Instance.menuCancelSfx.length);
 
+        #if UNITY_EDITOR
         EditorApplication.isPlaying = false;
+        #endif
 
         // Dentro da Unity
         // Fora da Unity

@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c7661b60e1f45de8e8c86e2bef1b19b, type: 3}
+  m_Name: CienciaDelasAparencia
+  m_EditorClassIdentifier: 
+  fundoMenu: {fileID: 21300000, guid: 76d73f2d07f54c2794fef1e80bc69980, type: 3}
+  fundoMesa: {fileID: 21300000, guid: 55f608fe8ed8419792b4bf69abde76a8, type: 3}
+  marie: {fileID: 21300000, guid: 952f2c72e1024c3eac56fce95f93d798, type: 3}
+  jaqueline: {fileID: 21300000, guid: 9480d84f5aa74d3c8860a122c0420ce2, type: 3}
+  retratoMarie: {fileID: -5789819113931693833, guid: 924fe12cfb83ae843966d3ae1c118fed, type: 3}
+  retratoJaqueline: {fileID: -1815285581251098465, guid: 1cc274b1433859b438c7c63246430a1f, type: 3}
+  iniciar: {fileID: 21300000, guid: 303c596dc6f44a29af111e0c561ca3c4, type: 3}
+  opcoes: {fileID: 21300000, guid: 2698dda6b77042d99bbbfc70c43322c6, type: 3}
+  sair: {fileID: 21300000, guid: 660d0c5302d349fdb8191bcc6b6aa05e, type: 3}
+  tutorial: {fileID: 21300000, guid: 4b9f1f564b5b489198a1befb39cbd779, type: 3}
+  voltar: {fileID: 21300000, guid: ccc81cc572144fbb811be5e59d9ff8a7, type: 3}
+  pausa: {fileID: 21300000, guid: 8310f1eb3a454ef19ccba217c9f007fd, type: 3}
+  som: {fileID: 21300000, guid: 2eb9252fbad94ce9a4b85288687a7703, type: 3}
+  semSom: {fileID: 21300000, guid: d155091956694ef6a5bb680ac92a05bb, type: 3}
+  saude: {fileID: 21300000, guid: 9cd8c083b22347058d5e27ec89533a46, type: 3}
+  infraestrutura: {fileID: 21300000, guid: 77d95d0ad17f4ed4b91956a883cffd64, type: 3}
+  pesquisa: {fileID: 21300000, guid: 4e461af9362e4c2faee7a4efc07ef80d, type: 3}
+  conhecimento: {fileID: 21300000, guid: f59480cc4504469e99f937cf5fa8826d, type: 3}
+  livro: {fileID: 21300000, guid: 62f98a1f3b1140309747b965f4370765, type: 3}
+  trofeu: {fileID: 21300000, guid: 4cabd6afa788414bb4fd4dfbf7a9b7f9, type: 3}
+  trofeuQuebrado: {fileID: 21300000, guid: 1f3d858128354874862708fa1f0d05ad, type: 3}
+  vitoria: {fileID: 21300000, guid: e7ac1e242ecc4f80b68b955a0c6f6aba, type: 3}
+  derrota: {fileID: 21300000, guid: 41646fb74fff49ebb7dc6e2140d5fe04, type: 3}
+  botaoNormal: {fileID: -3028269531860536145, guid: 7130f8a534b71f749b12646775f5a418, type: 3}
+  botaoHover: {fileID: -4252961216885536837, guid: 18aff58805865214e870b0967b999eb2, type: 3}
+  botaoPressionado: {fileID: -4843112193784511194, guid: 2fc9398dec385744b86d775195017e6f, type: 3}
+  slash: {fileID: 2800000, guid: bcc461ca77cf40f3b9e53a5766c02396, type: 3}
+  explosao: {fileID: 2800000, guid: ef85b1dace8c41c487ce7b97d56131d4, type: 3}
+  tamanhoCelula: 48
+  quadros: 10
+  primeiraColuna: 10
+  linhaDoTopo: 0
+  quadrosPorSegundo: 24
+  intensidadeShake: 7
+  duracaoShake: 0.3
+  quantidadeParticulas: 18
+  duracaoHover: 0.16
+  brilhoMarie: {r: 0.78, g: 0.56, b: 1, a: 1}
+  brilhoJaqueline: {r: 0.27, g: 0.94, b: 0.84, a: 1}

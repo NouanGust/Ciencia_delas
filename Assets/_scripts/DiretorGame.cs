@@ -21,10 +21,10 @@ public class DiretorGame : MonoBehaviour
 
     public int saude;
     public int saudeIni;
-    public int saudeMax = 10;
+    public int saudeMax = 30;
 
 
-    private List<Carta> cartasSelecionadas;
+    private List<Carta> cartasSelecionadas = new List<Carta>();
 
     void Awake()
     {
@@ -35,6 +35,7 @@ public class DiretorGame : MonoBehaviour
         } else
         {
             Destroy(gameObject);
+            return;
         }
 
         DontDestroyOnLoad(gameObject);
@@ -43,8 +44,8 @@ public class DiretorGame : MonoBehaviour
     private void Start()
     {
         custoInicial = custoMax;
-        ameacaPos = ameaca.GetComponent<RectTransform>();
-        saudeIni = 5;
+        if (ameaca != null) ameacaPos = ameaca.GetComponent<RectTransform>();
+        saudeIni = 10;
         saude = saudeIni;
         AtualizaUI();
     }
@@ -52,7 +53,7 @@ public class DiretorGame : MonoBehaviour
 
     private void Update()
     {
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (Time.timeScale > 0 && Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             TurnoInimigo();
 
@@ -72,12 +73,13 @@ public class DiretorGame : MonoBehaviour
 
     public void ConfirmarJogada()
     {
-        ScriptSound.Instance.PlaySelect();
+        if (Time.timeScale == 0 || ameaca == null || MaoJogador1.Instance == null) return;
+        ScriptSound.Instance?.PlaySelect();
         danoTotal = MaoJogador1.Instance.danoTotal;
 
         ameaca.TomarDano(danoTotal);
-        EfeitosDiretor.Instance.MostrarDano(danoTotal, ameacaPos);
-        EfeitosDiretor.Instance.TremerTela();
+        if (EfeitosDiretor.Instance != null && ameacaPos != null) EfeitosDiretor.Instance.MostrarDano(danoTotal, ameacaPos);
+        EfeitosDiretor.Instance?.TremerTela();
 
         //foreach (c cartasSelecionadas)
         //{
@@ -90,28 +92,29 @@ public class DiretorGame : MonoBehaviour
     public void TurnoInimigo()
     {
         // Se morreu retorna (cria outra ameaça)
+        if (ameaca == null || Time.timeScale == 0) return;
         var danoTotal = ameaca.Atacar();
-        ScriptSound.Instance.PlaySpecial();
-        if (danoTotal > saude)
+        ScriptSound.Instance?.PlaySpecial();
+        saude = Mathf.Max(0, saude - danoTotal);
+        if (saude == 0)
         {
             FimDeJogo();
         }
-        saude -= danoTotal;
         AtualizaUI();
     }
 
 
     public void AtualizaUI()
     {
-        conhTxt.text = $"Conhecimento: {custoInicial}/{custoMax}";
+        if (conhTxt != null) conhTxt.text = $"Conhecimento: {custoInicial}/{custoMax}";
 
-        saudeTxt.text = $"Saúde: {saude}/{saudeMax}";
+        if (saudeTxt != null) saudeTxt.text = $"Saúde: {saude}/{saudeMax}";
     }
 
 
     public void FimDeJogo()
     {
         Time.timeScale = 0f;
-        DiretorCenas.Instance.Sair();
+        Debug.Log("Fim do protótipo. Abra a cena CienciaDelas para a partida cooperativa completa.");
     }
 }

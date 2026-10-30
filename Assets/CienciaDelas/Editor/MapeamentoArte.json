@@ -1,0 +1,258 @@
+{
+  "cartas": [
+    {
+      "id": "analise",
+      "caminho": "Assets/Art/Cartas/CN_N_ANÁLISE GENÉTICA.png"
+    },
+    {
+      "id": "rapido",
+      "caminho": "Assets/Art/Cartas/CN_N_SEQUENCIAMENTO RÁPIDO.png"
+    },
+    {
+      "id": "resposta",
+      "caminho": "Assets/Art/Cartas/CN_N_RESPOSTA EPIDEMILÓGICA.png"
+    },
+    {
+      "id": "monitoramento",
+      "caminho": "Assets/Art/Cartas/CN_N_MONITORAMENTO DO CAOS.png"
+    },
+    {
+      "id": "insumos",
+      "caminho": "Assets/Art/Cartas/CN_N_DISTRIBUIÇÃO DE INSUMOS.png"
+    },
+    {
+      "id": "amostras",
+      "caminho": "Assets/Art/Cartas/CN_N_COLETA DE AMOSTRAS_.png"
+    },
+    {
+      "id": "controlado",
+      "caminho": "Assets/Art/Cartas/CN_N_EXPERIMENTO CONTROLADO.png"
+    },
+    {
+      "id": "campo",
+      "caminho": "Assets/Art/Cartas/CN_N_AÇÃO EM CAMPO.png"
+    },
+    {
+      "id": "intervencao",
+      "caminho": "Assets/Art/Cartas/CN_N_INTERVENÇÃO EMERGENCIAL.png"
+    },
+    {
+      "id": "vacinas",
+      "caminho": "Assets/Art/Cartas/CN_N_DESENVOLVIMENTO DE VACINAS.png"
+    },
+    {
+      "id": "radioatividade",
+      "caminho": "Assets/Art/Cartas/Especiais/MC_S_Radiotividade.PNG"
+    },
+    {
+      "id": "descoberta",
+      "caminho": "Assets/Art/Cartas/Especiais/MC_S_ Descoberta Cientifica (2).png"
+    },
+    {
+      "id": "energia",
+      "caminho": "Assets/Art/Cartas/Especiais/MC_S_Energia Nuclear  (2).png"
+    },
+    {
+      "id": "avancado",
+      "caminho": "Assets/Art/Cartas/Especiais/MC_S_Experimento avançado (2).png"
+    },
+    {
+      "id": "legado",
+      "caminho": "Assets/Art/Cartas/Especiais/MC_S_ Legado Científico.PNG"
+    },
+    {
+      "id": "genetico",
+      "caminho": "Assets/Art/Cartas/Especiais/JG_S_ Sequenciamento Genético  (2).png"
+    },
+    {
+      "id": "diagnostico",
+      "caminho": "Assets/Art/Cartas/Especiais/JG_S_Diagnóstico Rápido.gif"
+    },
+    {
+      "id": "mapeamento",
+      "caminho": "Assets/Art/Cartas/Especiais/JG_S_Mapeamento Viral.gif"
+    },
+    {
+      "id": "imediata",
+      "caminho": "Assets/Art/Cartas/Especiais/JG_S_ Resposta Imediata (3).png"
+    },
+    {
+      "id": "controle",
+      "caminho": "Assets/Art/Cartas/Especiais/JG_S_Controle Epidemiológico-.png"
+    },
+    {
+      "id": "casos",
+      "caminho": "Assets/Art/Ameacas/Primeiros Casos do Surto (1).png"
+    },
+    {
+      "id": "isolamento",
+      "caminho": "Assets/Art/Ameacas/Falha no Isolamento da Área Afetada (1) (1).png"
+    },
+    {
+      "id": "origem",
+      "caminho": "Assets/Art/Ameacas/Origem desconhecida do virus (1).png"
+    },
+    {
+      "id": "variante",
+      "caminho": "Assets/Art/Ameacas/Nova variante detectada (1).png"
+    },
+    {
+      "id": "hospitais",
+      "caminho": "Assets/Art/Ameacas/superlotação (1).png"
+    },
+    {
+      "id": "contagio",
+      "caminho": "Assets/Art/Ameacas/Contágio Fora de Controle (1).png"
+    },
+    {
+      "id": "desinformacao",
+      "caminho": "Assets/Art/Ameacas/Desinformação da População (1).png"
+    },
+    {
+      "id": "mutacao",
+      "caminho": "Assets/Art/Ameacas/Mutação inesperada do virus- (1).png"
+    },
+    {
+      "id": "fracasso",
+      "caminho": "Assets/Art/Ameacas/Fracasso no desenvolvimento da vacina (1).png"
+    },
+    {
+      "id": "testes",
+      "caminho": "Assets/Art/Ameacas/Risco nos testes clinicos- (1).png"
+    },
+    {
+      "id": "colapso",
+      "caminho": "Assets/Art/Ameacas/Contágio Fora de Controle (2).png"
+    },
+    {
+      "id": "caos",
+      "caminho": "Assets/Art/Ameacas/Desinformação da População (2).png"
+    },
+    {
+      "id": "crise",
+      "caminho": "Assets/Art/Ameacas/Contágio Fora de Controle (3).png"
+    },
+    {
+      "id": "resistencia",
+      "caminho": "Assets/Art/Ameacas/Risco nos testes clinicos- (2).png"
+    },
+    {
+      "id": "global",
+      "caminho": "Assets/Art/Ameacas/Ameaça Global Iminente 40x40 (1).png"
+    }
+  ],
+  "aparencia": [
+    {
+      "id": "fundoMenu",
+      "caminho": "Assets/Art/tela inicial 192x108.png"
+    },
+    {
+      "id": "fundoMesa",
+      "caminho": "Assets/Art/Tela do jogo 192x108.png"
+    },
+    {
+      "id": "marie",
+      "caminho": "Assets/Art/Marie Curie.png"
+    },
+    {
+      "id": "jaqueline",
+      "caminho": "Assets/Art/cientistas/Jaqueline Goes.png"
+    },
+    {
+      "id": "retratoMarie",
+      "caminho": "Assets/Art/Marie Curie.png"
+    },
+    {
+      "id": "retratoJaqueline",
+      "caminho": "Assets/Art/Jaqueline Goes- (1).png"
+    },
+    {
+      "id": "iniciar",
+      "caminho": "Assets/Art/inicio grande.png"
+    },
+    {
+      "id": "opcoes",
+      "caminho": "Assets/Art/opçoes (1).png"
+    },
+    {
+      "id": "sair",
+      "caminho": "Assets/Art/saair.png"
+    },
+    {
+      "id": "tutorial",
+      "caminho": "Assets/Art/Botão Tutorial (1).png"
+    },
+    {
+      "id": "voltar",
+      "caminho": "Assets/Art/VOLTAR CERTO (1).png"
+    },
+    {
+      "id": "pausa",
+      "caminho": "Assets/Art/botao pause .png"
+    },
+    {
+      "id": "som",
+      "caminho": "Assets/Art/botao com som .png"
+    },
+    {
+      "id": "semSom",
+      "caminho": "Assets/Art/botao sem som .png"
+    },
+    {
+      "id": "saude",
+      "caminho": "Assets/Art/coração10x10.png"
+    },
+    {
+      "id": "infraestrutura",
+      "caminho": "Assets/Art/engrenagem10x10.png"
+    },
+    {
+      "id": "pesquisa",
+      "caminho": "Assets/Art/becker10x10 (2) (1).png"
+    },
+    {
+      "id": "conhecimento",
+      "caminho": "Assets/Art/Raio10x13.png"
+    },
+    {
+      "id": "livro",
+      "caminho": "Assets/Art/livro aberto10x10.png"
+    },
+    {
+      "id": "trofeu",
+      "caminho": "Assets/Art/trofeu50x50 (1).png"
+    },
+    {
+      "id": "trofeuQuebrado",
+      "caminho": "Assets/Art/trofeu destruÃ_do .png"
+    },
+    {
+      "id": "vitoria",
+      "caminho": "Assets/Art/vitoria grande.png"
+    },
+    {
+      "id": "derrota",
+      "caminho": "Assets/Art/derrota pixel (8).png"
+    },
+    {
+      "id": "botaoNormal",
+      "caminho": "Assets/Art/UI/Button_Rectangle_Normal_Filled_Purple.png"
+    },
+    {
+      "id": "botaoHover",
+      "caminho": "Assets/Art/UI/Button_Rectangle_Hovered_Filled_Purple.png"
+    },
+    {
+      "id": "botaoPressionado",
+      "caminho": "Assets/Art/UI/Button_Rectangle_Clicked_Filled_Purple.png"
+    },
+    {
+      "id": "slash",
+      "caminho": "Assets/Art/Slash_shadder/Part 1/01.png"
+    },
+    {
+      "id": "explosao",
+      "caminho": "Assets/Art/Slash_shadder/Part 4/41.png"
+    }
+  ]
+}

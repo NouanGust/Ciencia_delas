@@ -9,9 +9,9 @@ public class Ameaca : MonoBehaviour
 
     public void TomarDano(int valor)
     {
-        if (valor >= vida)
+        vida = Mathf.Max(0, vida - Mathf.Max(0, valor));
+        if (vida > 0)
         {
-            vida -= valor;
             Debug.Log($"Tomou {valor} de dano/ Vida restante{vida}");
 
         }else

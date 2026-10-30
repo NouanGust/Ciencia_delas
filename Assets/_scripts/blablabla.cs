@@ -10,44 +10,47 @@ public class blablabla : MonoBehaviour
 
     private void Start()
     {
+        if (card_prefab == null || MaoJogador1.Instance == null) return;
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 4 && baralho_1.Count > 0; i++)
         {
+            Carta card_inst = Instantiate(card_prefab);
             int carta_index = Random.Range(0, baralho_1.Count);
             blabla carta_lista = baralho_1[carta_index];
             Debug.Log($"[Logic] {baralho_1[carta_index]}");
             Debug.Log($"[Logic] {baralho_1[carta_index].nome}");
 
-            card_prefab.custo = carta_lista.custo;
-            card_prefab.nome = carta_lista.nome;
-            card_prefab.dano = carta_lista.dano;
-            card_prefab.img = carta_lista.img;
+            card_inst.custo = carta_lista.custo;
+            card_inst.nome = carta_lista.nome;
+            card_inst.dano = carta_lista.dano;
+            card_inst.img = carta_lista.img;
             Debug.Log($"[Logic] {card_prefab.nome}");
 
 
 
-            MaoJogador1.Instance.cartas.Add(card_prefab);
-            mao_jogador_1.Add(card_prefab);
+            MaoJogador1.Instance.cartas.Add(card_inst);
+            mao_jogador_1.Add(card_inst);
             baralho_1.RemoveAt(carta_index);
         }
+        MaoJogador1.Instance.MontarMao();
 
 
- 
+
     }
 
     // Lista baralho player 1 => todas as cartas + especial Currie
     // Lista baralho player 2 => Todas as cartas + especial Gois
 
-    // Lista m„o player 1 => 5 cartas aleatÛrias do baralho 1 
-    // Lista m„o player 2 => 5 cartas aleatÛrias do baralho 2
+    // Lista m√£o player 1 => 5 cartas aleat√≥rias do baralho 1
+    // Lista m√£o player 2 => 5 cartas aleat√≥rias do baralho 2
 
 
-    // FunÁ„o para iniciar as m„os 
-    // foreach em uma lista baralho 1, pegar 5 cartas aleatÛrias e colocar na lista da m„o do player 1
-    // foreach em uma lista baralho 1, pegar 5 cartas aleatÛrias e colocar na lista da m„o do player 1
+    // Fun√ß√£o para iniciar as m√£os
+    // foreach em uma lista baralho 1, pegar 5 cartas aleat√≥rias e colocar na lista da m√£o do player 1
+    // foreach em uma lista baralho 1, pegar 5 cartas aleat√≥rias e colocar na lista da m√£o do player 1
 
-    // FunÁ„o para instanciar as cartas
-    // foreach na m„o do jogador 1, criar um objeto de Carta(script) e instanciar o objeto com as informaÁıes do ScriptableObject 
-    // foreach na m„o do jogador 2, criar um objeto de Carta(script) e instanciar o objeto com as informaÁıes do ScriptableObject
-    // 
+    // Fun√ß√£o para instanciar as cartas
+    // foreach na m√£o do jogador 1, criar um objeto de Carta(script) e instanciar o objeto com as informa√ß√µes do ScriptableObject
+    // foreach na m√£o do jogador 2, criar um objeto de Carta(script) e instanciar o objeto com as informa√ß√µes do ScriptableObject
+    //
 }

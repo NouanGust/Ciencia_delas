@@ -13,21 +13,20 @@ public class PausaDiretor : MonoBehaviour
     {
 
         // Define se o estado do jogo é Pausado(true) ou Rodando (false)
-        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             taPausado = !taPausado;
+            Time.timeScale = taPausado ? 0f : 1f;
         }
 
         // Aplico o estado no jogo, mudando a escala do tempo
         if (taPausado)
         {
-            Time.timeScale = 0f;
-            menuPanel.SetActive(true);
+            if (menuPanel != null) menuPanel.SetActive(true);
         }
         else
         {
-            Time.timeScale = 1.0f;
-            menuPanel.SetActive(false);
+            if (menuPanel != null) menuPanel.SetActive(false);
         }
 
     }

@@ -1,0 +1,649 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 531def70d6114c9c80fd726e8384d4f7, type: 3}
+  m_Name: CienciaDelasConfiguracao
+  m_EditorClassIdentifier: 
+  regras:
+    iniciais:
+      saude: 10
+      infraestrutura: 5
+      pesquisa: 5
+    maximoRecurso: 30
+    maoInicial: 4
+    limiteMao: 6
+    conhecimento: 3
+    limiteSelecao: 3
+    reporAteQuatro: 1
+    embaralharAmeacas: 1
+    duracaoRadioatividade: 2
+    perdaRadioatividade: 2
+    duracaoExperimento: 3
+    duracaoLegado: 2
+    cartasDiagnostico: 2
+    divisorConversao: 3
+  cartas:
+  - id: analise
+    nome: "An\xE1lise Gen\xE9tica"
+    descricao: "Ganho: Sa\xFAde 0 | Infra 0 | Pesquisa 1"
+    cientista: 0
+    conhecimento: 0
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 1
+    efeito: 0
+  - id: rapido
+    nome: "Sequenciamento R\xE1pido"
+    descricao: "Ganho: Sa\xFAde 0 | Infra 0 | Pesquisa 2"
+    cientista: 0
+    conhecimento: 1
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 2
+    efeito: 0
+  - id: resposta
+    nome: "Resposta Epidemiol\xF3gica"
+    descricao: "Ganho: Sa\xFAde 0 | Infra 3 | Pesquisa 0"
+    cientista: 0
+    conhecimento: 2
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 0
+      infraestrutura: 3
+      pesquisa: 0
+    efeito: 0
+  - id: monitoramento
+    nome: Monitoramento de Casos
+    descricao: "Revela a pr\xF3xima amea\xE7a at\xE9 ela entrar em jogo."
+    cientista: 0
+    conhecimento: 0
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    efeito: 1
+  - id: insumos
+    nome: "Distribui\xE7\xE3o de Insumos"
+    descricao: "Ganho: Sa\xFAde 0 | Infra 1 | Pesquisa 0"
+    cientista: 0
+    conhecimento: 0
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 0
+      infraestrutura: 1
+      pesquisa: 0
+    efeito: 0
+  - id: amostras
+    nome: Coleta de Amostras
+    descricao: "Ganho: Sa\xFAde 2 | Infra 0 | Pesquisa 1"
+    cientista: 0
+    conhecimento: 2
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 2
+      infraestrutura: 0
+      pesquisa: 1
+    efeito: 0
+  - id: controlado
+    nome: Experimento Controlado
+    descricao: "Ganho: Sa\xFAde 0 | Infra 0 | Pesquisa 1"
+    cientista: 0
+    conhecimento: 0
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 1
+    efeito: 0
+  - id: campo
+    nome: "A\xE7\xE3o em Campo"
+    descricao: "Ganho: Sa\xFAde 1 | Infra 1 | Pesquisa 1"
+    cientista: 0
+    conhecimento: 2
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 1
+      infraestrutura: 1
+      pesquisa: 1
+    efeito: 0
+  - id: intervencao
+    nome: "Interven\xE7\xE3o Emergencial"
+    descricao: "Ganho: Sa\xFAde 2 | Infra 0 | Pesquisa 0"
+    cientista: 0
+    conhecimento: 2
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 2
+      infraestrutura: 0
+      pesquisa: 0
+    efeito: 0
+  - id: vacinas
+    nome: Desenvolvimento de Vacinas
+    descricao: "Ganho: Sa\xFAde 1 | Infra 0 | Pesquisa 2"
+    cientista: 0
+    conhecimento: 2
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 1
+      infraestrutura: 0
+      pesquisa: 2
+    efeito: 0
+  - id: radioatividade
+    nome: Radioatividade
+    descricao: "Bloqueia a amea\xE7a escolhida por 2 rodadas, incluindo esta. Sa\xFAde
+      -2 ao final de cada uma."
+    cientista: 1
+    conhecimento: 2
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    efeito: 2
+  - id: descoberta
+    nome: "Descoberta Cient\xEDfica"
+    descricao: "Dobra o efeito da pr\xF3xima carta da fila global, inclusive de outra
+      cientista. N\xE3o dobra custos."
+    cientista: 1
+    conhecimento: 3
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    efeito: 3
+  - id: energia
+    nome: Energia Nuclear
+    descricao: "Ganho: Sa\xFAde 0 | Infra 1 | Pesquisa 2"
+    cientista: 1
+    conhecimento: 3
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 0
+      infraestrutura: 1
+      pesquisa: 2
+    efeito: 0
+  - id: avancado
+    nome: "Experimento Avan\xE7ado"
+    descricao: +1 em cada recurso ao final de 3 rodadas, incluindo esta.
+    cientista: 1
+    conhecimento: 3
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    efeito: 4
+  - id: legado
+    nome: "Legado Cient\xEDfico"
+    descricao: "+1 Pesquisa no in\xEDcio das pr\xF3ximas 2 rodadas."
+    cientista: 1
+    conhecimento: 3
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    efeito: 5
+  - id: genetico
+    nome: "Sequenciamento Gen\xE9tico"
+    descricao: "Anula a penalidade da amea\xE7a rec\xE9m-revelada nesta rodada."
+    cientista: 2
+    conhecimento: 3
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    efeito: 6
+  - id: diagnostico
+    nome: "Diagn\xF3stico R\xE1pido"
+    descricao: "Escolha at\xE9 2 cartas adicionais da sua m\xE3o, sem custo de Conhecimento.
+      Custos de recursos continuam valendo."
+    cientista: 2
+    conhecimento: 3
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    efeito: 7
+  - id: mapeamento
+    nome: Mapeamento Viral
+    descricao: "Reduz em 1 cada perda de recurso de cada amea\xE7a nesta rodada."
+    cientista: 2
+    conhecimento: 2
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    efeito: 8
+  - id: imediata
+    nome: Resposta Imediata
+    descricao: "Ganho: Sa\xFAde 1 | Infra 1 | Pesquisa 1"
+    cientista: 2
+    conhecimento: 3
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 1
+      infraestrutura: 1
+      pesquisa: 1
+    efeito: 0
+  - id: controle
+    nome: "Controle Epidemiol\xF3gico"
+    descricao: "Nesta rodada, cada perda da amea\xE7a escolhida vira ganho de um
+      ter\xE7o, arredondado para baixo."
+    cientista: 2
+    conhecimento: 3
+    custo:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    ganho:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    efeito: 9
+  ameacas:
+  - id: casos
+    nome: Primeiros Casos do Surto
+    requisito:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 7
+    penalidade:
+      saude: 2
+      infraestrutura: 0
+      pesquisa: 0
+    recompensa:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    gastar: 0
+    comparador: 0
+  - id: isolamento
+    nome: "Falha no Isolamento da \xC1rea Afetada"
+    requisito:
+      saude: 0
+      infraestrutura: 7
+      pesquisa: 0
+    penalidade:
+      saude: 0
+      infraestrutura: 1
+      pesquisa: 0
+    recompensa:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    gastar: 0
+    comparador: 0
+  - id: origem
+    nome: "Origem Desconhecida do V\xEDrus"
+    requisito:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 2
+    penalidade:
+      saude: 1
+      infraestrutura: 0
+      pesquisa: 0
+    recompensa:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    gastar: 1
+    comparador: 0
+  - id: variante
+    nome: Nova Variante Detectada
+    requisito:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 7
+    penalidade:
+      saude: 0
+      infraestrutura: 1
+      pesquisa: 0
+    recompensa:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    gastar: 0
+    comparador: 0
+  - id: hospitais
+    nome: "Superlota\xE7\xE3o dos Hospitais"
+    requisito:
+      saude: 0
+      infraestrutura: 9
+      pesquisa: 0
+    penalidade:
+      saude: 1
+      infraestrutura: 1
+      pesquisa: 0
+    recompensa:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    gastar: 0
+    comparador: 0
+  - id: contagio
+    nome: "Cont\xE1gio Fora de Controle"
+    requisito:
+      saude: 10
+      infraestrutura: 0
+      pesquisa: 0
+    penalidade:
+      saude: 1
+      infraestrutura: 0
+      pesquisa: 0
+    recompensa:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    gastar: 0
+    comparador: 0
+  - id: desinformacao
+    nome: "Desinforma\xE7\xE3o da Popula\xE7\xE3o"
+    requisito:
+      saude: 11
+      infraestrutura: 0
+      pesquisa: 11
+    penalidade:
+      saude: 1
+      infraestrutura: 0
+      pesquisa: 0
+    recompensa:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    gastar: 0
+    comparador: 0
+  - id: mutacao
+    nome: "Muta\xE7\xE3o Inesperada do V\xEDrus"
+    requisito:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 8
+    penalidade:
+      saude: 1
+      infraestrutura: 1
+      pesquisa: 1
+    recompensa:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    gastar: 1
+    comparador: 0
+  - id: fracasso
+    nome: Fracasso no Desenvolvimento da Vacina
+    requisito:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 6
+    penalidade:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 2
+    recompensa:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    gastar: 0
+    comparador: 0
+  - id: testes
+    nome: "Risco nos Testes Cl\xEDnicos"
+    requisito:
+      saude: 0
+      infraestrutura: 7
+      pesquisa: 7
+    penalidade:
+      saude: 0
+      infraestrutura: 2
+      pesquisa: 1
+    recompensa:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    gastar: 0
+    comparador: 0
+  - id: colapso
+    nome: "Colapso na Produ\xE7\xE3o de Vacinas"
+    requisito:
+      saude: 0
+      infraestrutura: 10
+      pesquisa: 0
+    penalidade:
+      saude: 0
+      infraestrutura: 2
+      pesquisa: 0
+    recompensa:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    gastar: 0
+    comparador: 0
+  - id: caos
+    nome: "Caos na Distribui\xE7\xE3o de Vacinas"
+    requisito:
+      saude: 12
+      infraestrutura: 12
+      pesquisa: 0
+    penalidade:
+      saude: 2
+      infraestrutura: 2
+      pesquisa: 0
+    recompensa:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    gastar: 0
+    comparador: 0
+  - id: crise
+    nome: "Crise Sanit\xE1ria Internacional"
+    requisito:
+      saude: 14
+      infraestrutura: 14
+      pesquisa: 14
+    penalidade:
+      saude: 2
+      infraestrutura: 2
+      pesquisa: 2
+    recompensa:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    gastar: 0
+    comparador: 0
+  - id: resistencia
+    nome: "Resist\xEAncia \xE0 Imuniza\xE7\xE3o"
+    requisito:
+      saude: 8
+      infraestrutura: 0
+      pesquisa: 0
+    penalidade:
+      saude: 2
+      infraestrutura: 0
+      pesquisa: 0
+    recompensa:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    gastar: 1
+    comparador: 0
+  - id: global
+    nome: "Amea\xE7a Global Iminente"
+    requisito:
+      saude: 16
+      infraestrutura: 16
+      pesquisa: 16
+    penalidade:
+      saude: 3
+      infraestrutura: 3
+      pesquisa: 3
+    recompensa:
+      saude: 0
+      infraestrutura: 0
+      pesquisa: 0
+    gastar: 0
+    comparador: 0
+  artes:
+  - id: analise
+    imagem: {fileID: -1133928697498375907, guid: 3fbd885eabf9ff749bc948b29941b7ff, type: 3}
+  - id: rapido
+    imagem: {fileID: -6280879032629859572, guid: 28e1e7962fc5b314b8a52dd372f4eeb1, type: 3}
+  - id: resposta
+    imagem: {fileID: -4266266202997813786, guid: 18e1d9ac014266b4db96aba4d22b9626, type: 3}
+  - id: monitoramento
+    imagem: {fileID: 3238816386603858043, guid: 15d1384fc42fc5c4b9854caa56ba3567, type: 3}
+  - id: insumos
+    imagem: {fileID: -1842244634298825307, guid: 6ea10d693486744488839182a08d855c, type: 3}
+  - id: amostras
+    imagem: {fileID: 4149741205074735818, guid: e4bafc6352b3eb3488f45b2186fb3b93, type: 3}
+  - id: controlado
+    imagem: {fileID: 7303139050852407821, guid: 69efc64a3b7f229429c1b43be0a573a4, type: 3}
+  - id: campo
+    imagem: {fileID: 2576727226841679668, guid: 32f80b6cffe30c648948d753da911327, type: 3}
+  - id: intervencao
+    imagem: {fileID: -2446094385298597509, guid: 81db7aac8463a3a479fb9ffcf6330465, type: 3}
+  - id: vacinas
+    imagem: {fileID: -2993440127699310692, guid: 67120e263686a5640b73f69b3dd1cbf3, type: 3}
+  - id: radioatividade
+    imagem: {fileID: -3508388708033989300, guid: 6b25b5eb959e7e643bf9a81711c05bd9, type: 3}
+  - id: descoberta
+    imagem: {fileID: 5038457357062230034, guid: 72f2be72eb06c0d4fafa8b0c8ace0135, type: 3}
+  - id: energia
+    imagem: {fileID: -5471964678789672970, guid: 16e6b2280d677f04d8b43d9ee9f8236e, type: 3}
+  - id: avancado
+    imagem: {fileID: -6555668802660014816, guid: baef647491ae0764c8e06fd70bef71b6, type: 3}
+  - id: legado
+    imagem: {fileID: -2419772133092923791, guid: ba591c424e8f5644286ff95366b8a1c1, type: 3}
+  - id: genetico
+    imagem: {fileID: -1424329205931322101, guid: 047b9adc5a64ea64baebc876198609c8, type: 3}
+  - id: diagnostico
+    imagem: {fileID: -6575496568640095943, guid: 97afde687086dd84fbdca1524b9b1292, type: 3}
+  - id: mapeamento
+    imagem: {fileID: 8751945680907541119, guid: ce597d5b7539e8942818d407943eccfa, type: 3}
+  - id: imediata
+    imagem: {fileID: -2516289442229310119, guid: d1d71266ab507114c9cde59eb2173457, type: 3}
+  - id: controle
+    imagem: {fileID: -4886938035011079046, guid: c834aa22fa6035b4f8915949ab5559bc, type: 3}
+  - id: casos
+    imagem: {fileID: 21300000, guid: 596d76ded20d4b9a97690563f3540000, type: 3}
+  - id: isolamento
+    imagem: {fileID: 21300000, guid: f759b318e31a43d182bc2c40dfb3812b, type: 3}
+  - id: origem
+    imagem: {fileID: 21300000, guid: 673f94d83233422db3ebdfa85f053e87, type: 3}
+  - id: variante
+    imagem: {fileID: 21300000, guid: db249ce2c32d479b9a6d50ff96082960, type: 3}
+  - id: hospitais
+    imagem: {fileID: 21300000, guid: 08481842a3ef4ef6b9324af9ffd00962, type: 3}
+  - id: contagio
+    imagem: {fileID: 21300000, guid: 1eedc929de1a47ef9081073e0e57cbaf, type: 3}
+  - id: desinformacao
+    imagem: {fileID: 21300000, guid: 830fdd85c6d3413bb8ee50cbaa278b65, type: 3}
+  - id: mutacao
+    imagem: {fileID: 21300000, guid: 21375b06af464dd09d5c2d562fe8ffdf, type: 3}
+  - id: fracasso
+    imagem: {fileID: 21300000, guid: d407a7db062947f3b9832bc09546f891, type: 3}
+  - id: testes
+    imagem: {fileID: 21300000, guid: 01e6b98f21b74a0db7d32a5efa751721, type: 3}
+  - id: colapso
+    imagem: {fileID: 21300000, guid: 90f972037e4f48cab817764b5c000390, type: 3}
+  - id: caos
+    imagem: {fileID: 21300000, guid: fd95cc27ab324ea69cc3e7f8ec09bc41, type: 3}
+  - id: crise
+    imagem: {fileID: 21300000, guid: bac83db151d84831ba4e762923afd776, type: 3}
+  - id: resistencia
+    imagem: {fileID: 21300000, guid: 086a06cc219d4a7c987e890b46784461, type: 3}
+  - id: global
+    imagem: {fileID: 21300000, guid: 14cc0adf1d8544be84d03582249cb379, type: 3}
+  fundo: {fileID: 0}
+  aparencia: {fileID: 11400000, guid: 08751abbf35b4b74b197b1cf29cba2fe, type: 2}
+  fonte: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  fundoCalmo: {r: 0.045, g: 0.09, b: 0.14, a: 1}
+  fundoCrise: {r: 0.22, g: 0.055, b: 0.075, a: 1}
+  painel: {r: 0.09, g: 0.16, b: 0.22, a: 1}
+  destaque: {r: 0.12, g: 0.43, b: 0.48, a: 1}
+  menu: {fileID: 8300000, guid: 6338cfa94259db74aadbabb29ac9dd71, type: 3}
+  partida: {fileID: 8300000, guid: ac056cd9d52fec343b73e49d24e4fe37, type: 3}
+  crise: {fileID: 8300000, guid: 3bb389ef2cc62a641ab1d9e9ecd55c9d, type: 3}
+  vitoria: {fileID: 8300000, guid: ad5969ee50088184092d0bdcbdc93715, type: 3}
+  derrota: {fileID: 8300000, guid: 84f889125c988db41a5521950d29b05d, type: 3}
+  ambiente: {fileID: 0}
+  selecionar: {fileID: 8300000, guid: 1d929fde5c69c0942a0921f2d0fbf711, type: 3}
+  cancelar: {fileID: 8300000, guid: 969f2b22426c2c744ad27e1d06873f63, type: 3}
+  comprar: {fileID: 8300000, guid: 138370b6f564a7b4bac7a2996892333a, type: 3}
+  confirmar: {fileID: 8300000, guid: 24a8dc1de23f6814fa3929b3ca419ffc, type: 3}
+  especial: {fileID: 8300000, guid: 4bc5fb08e166bd34190581b183d14e9d, type: 3}
+  intervaloExecucao: 1
+  intervaloResolucao: 1.8
