@@ -5,18 +5,29 @@ namespace CienciaDelas
     public sealed class AudioPartidaDiretor : SingletonComponente<AudioPartidaDiretor>
     {
         private ConfiguracaoJogo config;
-        private AudioSource musica, efeitos, ambiente;
+        [SerializeField] private AudioSource musica, efeitos, ambiente;
         private AudioClip desejada;
         public float VolumeMusica { get; private set; }
         public float VolumeEfeitos { get; private set; }
         public void Inicializar(ConfiguracaoJogo c)
         {
             config=c;
-            musica=gameObject.AddComponent<AudioSource>(); musica.loop=true; musica.playOnAwake=false;
-            efeitos=gameObject.AddComponent<AudioSource>(); efeitos.playOnAwake=false;
-            ambiente=gameObject.AddComponent<AudioSource>(); ambiente.loop=true; ambiente.playOnAwake=false; ambiente.clip=c.ambiente;
+            PrepararFontes();
+            ambiente.clip=c.ambiente;
             VolumeMusica=PlayerPrefs.GetFloat("CienciaDelas.Musica",.65f); VolumeEfeitos=PlayerPrefs.GetFloat("CienciaDelas.Efeitos",.8f);
             PartidaDiretor.Instance.Evento+=Evento;
+        }
+        public void PrepararFontes()
+        {
+            if (musica == null) musica = Fonte("Musica", true);
+            if (efeitos == null) efeitos = Fonte("Efeitos sonoros", false);
+            if (ambiente == null) ambiente = Fonte("Ambiente", true);
+        }
+        AudioSource Fonte(string nome, bool repetir)
+        {
+            var go = new GameObject(nome); go.transform.SetParent(transform, false);
+            var fonte = go.AddComponent<AudioSource>(); fonte.loop = repetir; fonte.playOnAwake = false;
+            return fonte;
         }
         public void Ajustar(bool music,float delta)
         {

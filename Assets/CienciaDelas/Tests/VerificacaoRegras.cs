@@ -64,6 +64,8 @@ namespace CienciaDelas
                 Exigir(P.Fase==Fase.Planejamento && !Plan.Alternar(0,c),"Bloqueio individual.");
                 Plan.Confirmar(1); P.AvancarExecucao(); Exigir(R.Atual.saude==9 && R.Atual.pesquisa==7 && J(0).conhecimento==2,"Custo/efeito.");
                 Exigir(J(0).Descarte.Contains(c) && !J(0).Mao.Contains(c),"Descarte."); P.AvancarExecucao();
+                Exigir(P.Fase==Fase.Ameacas,"A fila vazia deve aguardar a resolução das ameaças.");
+                P.FinalizarRodada();
                 Exigir(P.Rodada==2 && J(0).Mao.Count==4 && J(1).Mao.Count==5 && J(0).conhecimento==3,"Reposição.");
             });
             Caso("Compra limitada e reembaralhamento preservam as 15 cartas",()=> {

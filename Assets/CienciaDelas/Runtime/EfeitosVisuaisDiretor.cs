@@ -21,7 +21,9 @@ namespace CienciaDelas
             config=c; palco=root; camada=layer; origemPalco=root.anchoredPosition;
             cameraTransform=Camera.main!=null?Camera.main.transform:null; if(cameraTransform!=null) origemCamera=cameraTransform.localPosition;
             MovimentoReduzido=PlayerPrefs.GetInt("CienciaDelas.MovimentoReduzido",0)==1;
-            gameObject.AddComponent<ParticulasUIDiretor>().Inicializar(layer);
+            var particulas = GetComponent<ParticulasUIDiretor>();
+            if (particulas == null) particulas = gameObject.AddComponent<ParticulasUIDiretor>();
+            particulas.Inicializar(layer);
             PartidaDiretor.Instance.CartaExecutada+=Carta;
             PartidaDiretor.Instance.AmeacaResolvida+=Ameaca;
             PartidaDiretor.Instance.Evento+=Evento;

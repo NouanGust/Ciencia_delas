@@ -1,1 +1,0 @@
-PASS: menu, início, seis cartas por mão, seleção, execução com efeitos, diagnóstico, rodada seguinte, pausa, opções e encerramentos; sem erros de execução.

@@ -1,1 +1,0 @@
-Scripts novos: compilação de editor e jogador aprovada usando as bibliotecas instaladas do Unity 6000.3.15f1.

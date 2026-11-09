@@ -1,1 +1,0 @@
-Configuração válida: 20 cartas, 15 ameaças, reposição até quatro. Cena YAML válida: 13 objetos.

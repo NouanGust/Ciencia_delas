@@ -301,6 +301,9 @@ PlayerSettings:
   - m_BuildTarget: WebGL
     m_StaticBatching: 0
     m_DynamicBatching: 0
+  - m_BuildTarget: Standalone
+    m_StaticBatching: 1
+    m_DynamicBatching: 0
   m_BuildTargetShaderSettings: []
   m_BuildTargetGraphicsJobs: []
   m_BuildTargetGraphicsJobMode: []
@@ -602,9 +605,9 @@ PlayerSettings:
     PS4: DOTWEEN;DOTWEEN_NOPHYSICS
     PS5: DOTWEEN;DOTWEEN_NOPHYSICS
     QNX: DOTWEEN;DOTWEEN_NOPHYSICS
-    Standalone: DOTWEEN;DOTWEEN_NOPHYSICS
+    Standalone: DOTWEEN;DOTWEEN_NOPHYSICS;SENTIS_ANALYTICS_ENABLED;APP_UI_EDITOR_ONLY
     VisionOS: DOTWEEN;DOTWEEN_NOPHYSICS
-    WebGL: DOTWEEN;DOTWEEN_NOPHYSICS
+    WebGL: DOTWEEN;DOTWEEN_NOPHYSICS;SENTIS_ANALYTICS_ENABLED;APP_UI_EDITOR_ONLY
     Windows Store Apps: DOTWEEN;DOTWEEN_NOPHYSICS
     XboxOne: DOTWEEN;DOTWEEN_NOPHYSICS
     iPhone: DOTWEEN;DOTWEEN_NOPHYSICS

@@ -15,9 +15,13 @@ namespace CienciaDelas
             if(configuracao==null) configuracao=Resources.Load<ConfiguracaoJogo>("CienciaDelasConfiguracao");
             if(configuracao==null) configuracao=ScriptableObject.CreateInstance<ConfiguracaoJogo>();
             PartidaDiretor.Instance.Menu();
-            gameObject.AddComponent<AudioPartidaDiretor>().Inicializar(configuracao);
-            gameObject.AddComponent<InterfaceDiretor>().Inicializar(configuracao);
-            gameObject.AddComponent<EntradaDiretor>();
+            var audio = GetComponent<AudioPartidaDiretor>();
+            if (audio == null) audio = gameObject.AddComponent<AudioPartidaDiretor>();
+            audio.Inicializar(configuracao);
+            var interfaceJogo = GetComponent<InterfaceDiretor>();
+            if (interfaceJogo == null) interfaceJogo = gameObject.AddComponent<InterfaceDiretor>();
+            interfaceJogo.Inicializar(configuracao);
+            if (GetComponent<EntradaDiretor>() == null) gameObject.AddComponent<EntradaDiretor>();
         }
         private void Update()
         {

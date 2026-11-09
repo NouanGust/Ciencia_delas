@@ -629,7 +629,29 @@ MonoBehaviour:
     imagem: {fileID: 21300000, guid: 14cc0adf1d8544be84d03582249cb379, type: 3}
   fundo: {fileID: 0}
   aparencia: {fileID: 11400000, guid: 08751abbf35b4b74b197b1cf29cba2fe, type: 2}
-  fonte: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  fonte: {fileID: 11400000, guid: 0e799541bdae7a047ba753e555c1a68b, type: 2}
+  iconesRecursos: {fileID: 11400000, guid: 44a556dc7feba8a42812d1cba52dbac8, type: 2}
+  iconesTeclado:
+  - tecla: A
+    imagem: {fileID: -8680797543115379092, guid: 5061d46ec4f3a4f4b94eb2f5e6dfbc59, type: 3}
+  - tecla: D
+    imagem: {fileID: -962488092458481032, guid: e111bfd5da0ede042b422da4d4ebfb7a, type: 3}
+  - tecla: Z
+    imagem: {fileID: 4969131362173423726, guid: 7a8ae0368d7a33f4e834a9e1eda2c33f, type: 3}
+  - tecla: LEFT ARROW
+    imagem: {fileID: 6980153840179339875, guid: 57b6a620a1cb4cc4f8e8e7a648b0bcfd, type: 3}
+  - tecla: RIGHT ARROW
+    imagem: {fileID: 58403161083946906, guid: f0322ceb61743bb40a347750d3777f06, type: 3}
+  - tecla: ENTER
+    imagem: {fileID: 1088408180396678501, guid: 6cd35a91522155949a97f4bb3145485a, type: 3}
+  - tecla: Q
+    imagem: {fileID: -3859272008004827343, guid: 2fb006803fecaae4a90281b8c5e38bef, type: 3}
+  - tecla: E
+    imagem: {fileID: -2224474878120320963, guid: adfa71291f4fe9449a0bedda5e8fb713, type: 3}
+  - tecla: TAB
+    imagem: {fileID: 5386239682415777883, guid: 8e6bf7286f1e72f47aec005d763fb83d, type: 3}
+  - tecla: ESC
+    imagem: {fileID: 3663349373607313613, guid: 7bb185622523f5b4bb5c879f6d5026db, type: 3}
   fundoCalmo: {r: 0.045, g: 0.09, b: 0.14, a: 1}
   fundoCrise: {r: 0.22, g: 0.055, b: 0.075, a: 1}
   painel: {r: 0.09, g: 0.16, b: 0.22, a: 1}
